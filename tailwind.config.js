@@ -32,8 +32,8 @@ module.exports = {
       xl: "1280px",
     },
     fontFamily: {
-      sans: ["Montserrat", "Montserrat"],
-      serif: ["Montserrat", "Montserrat"],
+      sans: ["Alkatra", "Alkatra"],
+      serif: ["Alkatra", "Alkatra"],
       mono: ["ui-monospace", "SFMono-Regular"],
       extend: {
         spacing: {
