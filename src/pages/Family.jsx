@@ -2,7 +2,7 @@ import React from 'react'
 
 const Family = () => {
   return (
-    <div>Family</div>
+    <div className='h-[100vh]'>Family</div>
   )
 }
 

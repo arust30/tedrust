@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sermons = () => {
   return (
-    <div>Sermons</div>
+    <div className='h-[100vh]'>Sermons</div>
   )
 }
 
