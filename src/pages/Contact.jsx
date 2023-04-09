@@ -43,7 +43,7 @@ const Contact = () => {
                   >
                     Your email address{" "}
                     <span class="text-xs text-gray-500">
-                      (So we can reply to you)
+                      (So I can reply to you)
                     </span>
                   </label>
                   <input
@@ -65,7 +65,7 @@ const Contact = () => {
                     type="text"
                     id="subject"
                     class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-                    placeholder="Let us know how we can help you"
+                    placeholder="Let me know who you are"
                     required
                   />
                 </div>
@@ -80,7 +80,7 @@ const Contact = () => {
                     id="message"
                     rows="6"
                     class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Leave a comment..."
+                    placeholder="Let me know how I can help you"
                   ></textarea>
                   <div class="flex mt-4">
                     <input
