@@ -6,6 +6,7 @@ import Daniel from "../assets/Daniel.jpg";
 import Beverly from "../assets/Mom.jpg";
 import Butterscotch from "../assets/Butterscotch.jpg";
 import Andrew from "../assets/Andrew.png";
+import Contact from "./Contact";
 
 const Family = () => {
   const family = [
@@ -78,6 +79,7 @@ const Family = () => {
           </div>
         </div>
       </section>
+      <Contact />
     </>
   );
 };
