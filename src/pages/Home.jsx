@@ -3,8 +3,9 @@ import TedHeadshot from "../assets/tedheadshot.png";
 
 const Home = () => {
   return (
-    <div className="h-[100vh]">
-      <section class="bg-white dark:bg-gray-900">
+    <div>
+      {/* <div className="h-[100vh]"> */}
+      <section class="bg-[url('././assets/churchbackground.jpg')] bg-repeat bg-cover bg-center bg-gray-700 bg-blend-multiply">
         <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img
@@ -13,7 +14,7 @@ const Home = () => {
               alt="Ted Rust of Ted Rust Ministries"
             />
           </div>
-          <div class="mr-auto place-self-center lg:col-span-7">
+          <div class="mr-auto place-self-center lg:col-span-7 bg-white opacity-80 p-6 rounded-xl">
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
               Ted Rust Ministries
             </h1>
