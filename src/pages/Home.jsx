@@ -1,10 +1,10 @@
 import React from "react";
 import TedHeadshot from "../assets/tedheadshot.png";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
-    <div>
-      {/* <div className="h-[100vh]"> */}
+    <>
       <section class="bg-[url('././assets/churchbackground.jpg')] bg-repeat bg-cover bg-center bg-gray-700 bg-blend-multiply h-[60vh] justify-center items-center">
         <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
@@ -53,7 +53,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
+      <Contact />
+    </>
   );
 };
 
