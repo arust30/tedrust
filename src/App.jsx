@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import NavBar from "./pages/NavBar";
 import Footer from "./pages/Footer";
 
+
 function App() {
   return (
     <>
