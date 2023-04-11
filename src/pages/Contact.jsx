@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useRef } from "react";
 import TedPhone from "../assets/tedphone.png";
 import TedEmail from "../assets/tedemail.png";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
+
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
     emailjs
       .sendForm(
         "service_h0bjfod",
-        "template_1ayf1yb",
-        event.target,
-        "ydP6hL_Ld_3jHHSlffKyi"
+        "template_u8np72g",
+        form.current,
+        "_9sPC-R9huWnQ7KA-"
       )
       .then(
         (result) => {
@@ -21,6 +25,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+    e.target.reset();
   };
 
   return (
@@ -52,10 +57,10 @@ const Contact = () => {
               <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 lg:mb-8 md:text-4xl dark:text-white">
                 Contact Ted
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-8">
+              <form onSubmit={handleSubmit} id="form" ref={form} className="space-y-8">
                 <div>
                   <label
-                    htmlFor="email"
+                    for="email"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                   >
                     Your email address{" "}
@@ -67,6 +72,7 @@ const Contact = () => {
                     type="email"
                     id="email"
                     name="email"
+                    for="email"
                     className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                     placeholder="name@email.com"
                     required
@@ -82,6 +88,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="subject"
+                    for="subject"
                     class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                     placeholder="Let me know who you are"
                     required
@@ -133,6 +140,10 @@ const Contact = () => {
                 <button
                   type="submit"
                   class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  onClick={() => {
+                    handleSubmit();
+                  }
+                  }
                 >
                   Send message
                 </button>
