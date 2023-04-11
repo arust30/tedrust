@@ -1,6 +1,5 @@
 import React from "react";
 import YouTube from "react-youtube";
-import { ChevronDownIcon } from "@heroicons/react/solid";
 
 const Sermons = () => {
   const videoURLS = [
