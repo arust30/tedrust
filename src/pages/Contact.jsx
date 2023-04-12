@@ -1,10 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import TedPhone from "../assets/tedphone.png";
 import TedEmail from "../assets/tedemail.png";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
-
+  const [showMessage, setShowMessage] = useState(false);
   const form = useRef();
 
   const handleSubmit = (e) => {
@@ -20,6 +20,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setShowMessage(true);
         },
         (error) => {
           console.log(error.text);
@@ -150,6 +151,14 @@ const Contact = () => {
                 >
                   Send message
                 </button>
+                {showMessage && (
+                  <div class="flex items-center bg-green-500 text-white text-sm font-bold px-4 py-3" role="alert">
+                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11.293 14.707l5-5a1 1 0 0 0-1.414-1.414L10 12.586 7.707 10.293a1 1 0 1 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0z"/></svg>
+                    <p>Message sent successfully!</p>
+                  </div>
+                )}
+                
+
               </form>
             </div>
           </div>
