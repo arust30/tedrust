@@ -7,6 +7,8 @@ import Biography from "./pages/Biography";
 import Contact from "./pages/Contact";
 import NavBar from "./pages/NavBar";
 import Footer from "./pages/Footer";
+import 'flowbite/dist/flowbite.min.js';
+import 'flowbite-react';
 
 function App() {
   return (

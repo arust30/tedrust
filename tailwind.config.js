@@ -44,6 +44,7 @@ module.exports = {
           "10xl": "120rem",
         },
       },
+      plugins: [require("flowbite/plugin")],
       module: {
         rules: [
           {
@@ -56,4 +57,5 @@ module.exports = {
       ignoreWarnings: [/Failed to parse source map/],
     },
   },
+  plugins: [require("flowbite/plugin")],
 };
