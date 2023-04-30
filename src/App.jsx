@@ -21,6 +21,7 @@ function App() {
           <Route path="/sermons" element={<Sermons />} />
           <Route path="/biography" element={<Biography />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </Router>
       <Footer />
