@@ -3,6 +3,7 @@ import YouTube from "react-youtube";
 
 const Sermons = () => {
   const videoURLS = [
+    "https://www.youtube.com/watch?v=c7teb-65RKU",
     "https://www.youtube.com/watch?v=cVdUBjHpy7s",
     "https://www.youtube.com/watch?v=dPa1omkl67M",
     "https://www.youtube.com/watch?v=YaabtceU3V4",
